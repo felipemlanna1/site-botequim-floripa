@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <linearGradient id="gold-main" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="50%" style="stop-color:#d97706"/>
+      <stop offset="100%" style="stop-color:#b45309"/>
+    </linearGradient>
+    <linearGradient id="gold-light" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fef3c7"/>
+      <stop offset="100%" style="stop-color:#fde68a"/>
+    </linearGradient>
+    <linearGradient id="gold-dark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#92400e"/>
+      <stop offset="100%" style="stop-color:#78350f"/>
+    </linearGradient>
+    <linearGradient id="beer-body" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24"/>
+      <stop offset="40%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="shadow-soft" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#451a03" flood-opacity="0.25"/>
+    </filter>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="mug-clip">
+      <rect x="10" y="28" width="42" height="58" rx="6"/>
+    </clipPath>
+  </defs>
+
+  <!-- Beer mug body -->
+  <rect x="10" y="28" width="42" height="58" rx="6" fill="url(#beer-body)" filter="url(#shadow-soft)"/>
+  <!-- Beer liquid level lines -->
+  <line x1="14" y1="50" x2="48" y2="50" stroke="#fde68a" stroke-width="0.5" opacity="0.4"/>
+  <line x1="14" y1="58" x2="48" y2="58" stroke="#fde68a" stroke-width="0.5" opacity="0.3"/>
+  <line x1="14" y1="66" x2="48" y2="66" stroke="#fde68a" stroke-width="0.5" opacity="0.2"/>
+  <!-- Beer bubbles inside mug -->
+  <circle cx="22" cy="60" r="1.5" fill="#fef3c7" opacity="0.5"/>
+  <circle cx="30" cy="55" r="1" fill="#fef3c7" opacity="0.4"/>
+  <circle cx="38" cy="62" r="1.2" fill="#fef3c7" opacity="0.45"/>
+  <circle cx="25" cy="48" r="0.8" fill="#fef3c7" opacity="0.35"/>
+  <circle cx="35" cy="50" r="1" fill="#fef3c7" opacity="0.4"/>
+  <!-- Beer mug handle -->
+  <path d="M52 36 C60 36, 64 42, 64 52 C64 62, 60 68, 52 68" fill="none" stroke="url(#gold-main)" stroke-width="4" stroke-linecap="round"/>
+  <!-- Foam top -->
+  <ellipse cx="15" cy="26" rx="7" ry="6" fill="url(#gold-light)"/>
+  <ellipse cx="26" cy="23" rx="9" ry="8" fill="url(#gold-light)"/>
+  <ellipse cx="38" cy="25" rx="8" ry="7" fill="url(#gold-light)"/>
+  <ellipse cx="48" cy="27" rx="6" ry="5" fill="url(#gold-light)"/>
+  <!-- Foam highlight bubbles -->
+  <circle cx="18" cy="24" r="2" fill="white" opacity="0.6"/>
+  <circle cx="30" cy="21" r="2.5" fill="white" opacity="0.5"/>
+  <circle cx="42" cy="23" r="1.8" fill="white" opacity="0.55"/>
+  <!-- Mug shine reflection -->
+  <rect x="14" y="32" width="4" height="40" rx="2" fill="white" opacity="0.12"/>
+
+  <!-- Decorative line separator -->
+  <line x1="78" y1="25" x2="78" y2="95" stroke="url(#gold-main)" stroke-width="1.5" opacity="0.3"/>
+
+  <!-- Main text: BOTEQUIM -->
+  <text x="92" y="58" font-family="Georgia, 'Playfair Display', 'Times New Roman', serif" font-size="38" font-weight="bold" fill="#451a03" letter-spacing="2" filter="url(#shadow-soft)">BOTEQUIM</text>
+
+  <!-- Sub text: FLORIPA -->
+  <text x="92" y="82" font-family="Georgia, 'Playfair Display', 'Times New Roman', serif" font-size="22" fill="url(#gold-main)" letter-spacing="8" font-weight="600">FLORIPA</text>
+
+  <!-- Decorative underline with ornaments -->
+  <line x1="92" y1="90" x2="230" y2="90" stroke="url(#gold-main)" stroke-width="1.5"/>
+  <circle cx="92" cy="90" r="2" fill="#d97706"/>
+  <circle cx="230" cy="90" r="2" fill="#d97706"/>
+
+  <!-- Subtitle: desde 2002 -->
+  <text x="92" y="106" font-family="Georgia, 'Playfair Display', serif" font-size="11" fill="#92400e" letter-spacing="3" font-style="italic" opacity="0.7">DESDE 2002</text>
+
+  <!-- Small decorative star ornaments -->
+  <polygon points="340,30 342,36 348,36 343,40 345,46 340,42 335,46 337,40 332,36 338,36" fill="#d97706" opacity="0.4"/>
+  <polygon points="360,50 361.5,54 366,54 362.5,57 364,61 360,58 356,61 357.5,57 354,54 358.5,54" fill="#f59e0b" opacity="0.3"/>
+  <polygon points="350,70 351,73 354,73 351.5,75 352.5,78 350,76 347.5,78 348.5,75 346,73 349,73" fill="#fbbf24" opacity="0.25"/>
+
+  <!-- Wheat/grain decorative elements on the right -->
+  <path d="M370,35 Q375,25 380,35 Q375,30 370,35Z" fill="#d97706" opacity="0.3"/>
+  <path d="M375,40 Q380,30 385,40 Q380,35 375,40Z" fill="#d97706" opacity="0.25"/>
+  <path d="M365,45 Q370,35 375,45 Q370,40 365,45Z" fill="#d97706" opacity="0.2"/>
+  <path d="M370,55 Q375,45 380,55 Q375,50 370,55Z" fill="#d97706" opacity="0.25"/>
+  <path d="M375,60 Q380,50 385,60 Q380,55 375,60Z" fill="#d97706" opacity="0.2"/>
+  <line x1="377" y1="25" x2="377" y2="70" stroke="#b45309" stroke-width="1" opacity="0.2"/>
+
+  <!-- Additional decorative corner elements -->
+  <path d="M88,30 L92,30 L92,26" fill="none" stroke="#d97706" stroke-width="1" opacity="0.4"/>
+  <path d="M234,90 L238,90 L238,94" fill="none" stroke="#d97706" stroke-width="1" opacity="0.4"/>
+</svg>
